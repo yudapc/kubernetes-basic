@@ -1,23 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-engine
+  name: backend-user
   namespace: default
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      appname: backend-engine
+      appname: backend-user
   template:
     metadata:
       labels:
-        appname: backend-engine
+        appname: backend-user
     spec:
       containers:
-      - name: backend-app
-        image: backend-app:v0.1.1
-        ports:
-        - containerPort: 3000
       - name: backend-user
         image: backend-user:v0.1.1
         ports:
