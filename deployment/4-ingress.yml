@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: backend-app-ingress 
+spec:
+  rules:
+  - host: yourdomain.local
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: backend-app-service
+          servicePort: http
+  - host: user.yourdomain.local
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: backend-user-service
+          servicePort: http
