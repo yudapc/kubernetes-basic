@@ -2,6 +2,7 @@
 
 Sample App Deployment using Docker and Kubernetes
 
+
 ### BackendApp
 
 The backend app using golang. Need to build docker image
@@ -55,3 +56,29 @@ Run deployment:
 ```
 127.0.0.1 yourdomain.local user.yourdomain.local
 ```
+
+
+### Concept
+
+#### ClusterIP
+
+![alt text](https://github.com/yudapc/kubernetes-basic/raw/master/concept/ClusterIP.png)
+
+#### NodePort
+
+![alt text](https://github.com/yudapc/kubernetes-basic/raw/master/concept/NodePort.png)
+
+
+#### LoadBalancer
+
+![alt text](https://github.com/yudapc/kubernetes-basic/raw/master/concept/LoadBalancer.png)
+
+
+#### Ingress
+
+![alt text](https://github.com/yudapc/kubernetes-basic/raw/master/concept/Ingress.png)
+
+
+#### Image Source
+
+https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
